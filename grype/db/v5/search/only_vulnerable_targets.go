@@ -3,9 +3,9 @@ package search
 import (
 	"github.com/facebookincubator/nvdtools/wfn"
 
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/vulnerability"
 	syftPkg "github.com/anchore/syft/syft/pkg"
+	"github.com/mairaayub1/grype/grype/pkg"
+	"github.com/mairaayub1/grype/grype/vulnerability"
 )
 
 func isOSPackage(p pkg.Package) bool {

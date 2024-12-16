@@ -8,10 +8,10 @@ import (
 	"github.com/go-test/deep"
 	"gorm.io/gorm"
 
-	"github.com/anchore/grype/grype/db/internal/gormadapter"
-	v5 "github.com/anchore/grype/grype/db/v5"
-	"github.com/anchore/grype/grype/db/v5/store/model"
-	"github.com/anchore/grype/internal/stringutil"
+	"github.com/mairaayub1/grype/grype/db/internal/gormadapter"
+	v5 "github.com/mairaayub1/grype/grype/db/v5"
+	"github.com/mairaayub1/grype/grype/db/v5/store/model"
+	"github.com/mairaayub1/grype/internal/stringutil"
 )
 
 // store holds an instance of the database connection

@@ -6,7 +6,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 
-	grypePkg "github.com/anchore/grype/grype/pkg"
+	grypePkg "github.com/mairaayub1/grype/grype/pkg"
 )
 
 func TestResolver_Normalize(t *testing.T) {

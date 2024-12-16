@@ -9,8 +9,8 @@ import (
 	"github.com/go-test/deep"
 	"github.com/stretchr/testify/assert"
 
-	v4 "github.com/anchore/grype/grype/db/v4"
-	"github.com/anchore/grype/grype/db/v4/store/model"
+	v4 "github.com/mairaayub1/grype/grype/db/v4"
+	"github.com/mairaayub1/grype/grype/db/v4/store/model"
 )
 
 func assertIDReader(t *testing.T, reader v4.IDReader, expected v4.ID) {

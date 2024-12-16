@@ -1,7 +1,7 @@
 package match
 
 import (
-	"github.com/anchore/grype/internal/log"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 var explicitIgnoreRules []IgnoreRule

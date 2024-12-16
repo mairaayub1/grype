@@ -6,7 +6,7 @@ import (
 
 	"gorm.io/gorm"
 
-	"github.com/anchore/grype/internal/log"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 type DBMetadataStoreWriter interface {

@@ -4,8 +4,8 @@ import (
 	"github.com/wagoodman/go-partybus"
 
 	"github.com/anchore/go-logger"
-	"github.com/anchore/grype/internal/bus"
-	"github.com/anchore/grype/internal/log"
+	"github.com/mairaayub1/grype/internal/bus"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 func SetLogger(l logger.Logger) {

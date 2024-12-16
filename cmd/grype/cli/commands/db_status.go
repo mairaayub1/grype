@@ -9,10 +9,10 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/anchore/clio"
-	legacyDistribution "github.com/anchore/grype/grype/db/legacy/distribution"
-	v6 "github.com/anchore/grype/grype/db/v6"
-	"github.com/anchore/grype/grype/db/v6/distribution"
-	"github.com/anchore/grype/grype/db/v6/installation"
+	legacyDistribution "github.com/mairaayub1/grype/grype/db/legacy/distribution"
+	v6 "github.com/mairaayub1/grype/grype/db/v6"
+	"github.com/mairaayub1/grype/grype/db/v6/distribution"
+	"github.com/mairaayub1/grype/grype/db/v6/installation"
 )
 
 type dbStatusOptions struct {

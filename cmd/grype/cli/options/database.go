@@ -7,10 +7,10 @@ import (
 	"github.com/adrg/xdg"
 
 	"github.com/anchore/clio"
-	legacyDistribution "github.com/anchore/grype/grype/db/legacy/distribution"
-	"github.com/anchore/grype/grype/db/v6/distribution"
-	"github.com/anchore/grype/grype/db/v6/installation"
-	"github.com/anchore/grype/internal"
+	legacyDistribution "github.com/mairaayub1/grype/grype/db/legacy/distribution"
+	"github.com/mairaayub1/grype/grype/db/v6/distribution"
+	"github.com/mairaayub1/grype/grype/db/v6/installation"
+	"github.com/mairaayub1/grype/internal"
 )
 
 type Database struct {

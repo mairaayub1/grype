@@ -9,15 +9,15 @@ import (
 	"github.com/facebookincubator/nvdtools/wfn"
 	"github.com/scylladb/go-set/strset"
 
-	v5 "github.com/anchore/grype/grype/db/v5"
-	"github.com/anchore/grype/grype/distro"
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/version"
-	"github.com/anchore/grype/grype/vulnerability"
-	"github.com/anchore/grype/internal/log"
 	"github.com/anchore/syft/syft/cpe"
 	syftPkg "github.com/anchore/syft/syft/pkg"
+	v5 "github.com/mairaayub1/grype/grype/db/v5"
+	"github.com/mairaayub1/grype/grype/distro"
+	"github.com/mairaayub1/grype/grype/match"
+	"github.com/mairaayub1/grype/grype/pkg"
+	"github.com/mairaayub1/grype/grype/version"
+	"github.com/mairaayub1/grype/grype/vulnerability"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 type CPEPackageParameter struct {

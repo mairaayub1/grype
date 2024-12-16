@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/vulnerability"
+	"github.com/mairaayub1/grype/grype/match"
+	"github.com/mairaayub1/grype/grype/pkg"
+	"github.com/mairaayub1/grype/grype/vulnerability"
 )
 
 // Document represents the JSON document to be presented

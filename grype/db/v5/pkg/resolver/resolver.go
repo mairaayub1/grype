@@ -1,7 +1,7 @@
 package resolver
 
 import (
-	grypePkg "github.com/anchore/grype/grype/pkg"
+	grypePkg "github.com/mairaayub1/grype/grype/pkg"
 )
 
 type Resolver interface {

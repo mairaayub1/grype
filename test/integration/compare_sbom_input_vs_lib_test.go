@@ -8,16 +8,16 @@ import (
 	"github.com/scylladb/go-set/strset"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/grype/grype"
-	"github.com/anchore/grype/grype/db/legacy/distribution"
-	"github.com/anchore/grype/internal"
-	"github.com/anchore/grype/internal/log"
 	"github.com/anchore/syft/syft/format/spdxjson"
 	"github.com/anchore/syft/syft/format/spdxtagvalue"
 	"github.com/anchore/syft/syft/format/syftjson"
 	syftPkg "github.com/anchore/syft/syft/pkg"
 	"github.com/anchore/syft/syft/sbom"
 	"github.com/anchore/syft/syft/source"
+	"github.com/mairaayub1/grype/grype"
+	"github.com/mairaayub1/grype/grype/db/legacy/distribution"
+	"github.com/mairaayub1/grype/internal"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 func getListingURL() string {

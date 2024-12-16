@@ -14,7 +14,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/wagoodman/go-progress"
 
-	db "github.com/anchore/grype/grype/db/v6"
+	db "github.com/mairaayub1/grype/grype/db/v6"
 )
 
 func TestClient_LatestFromURL(t *testing.T) {

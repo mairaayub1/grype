@@ -14,10 +14,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/wagoodman/go-progress"
 
-	db "github.com/anchore/grype/grype/db/v6"
-	"github.com/anchore/grype/grype/db/v6/distribution"
-	"github.com/anchore/grype/grype/db/v6/internal"
-	"github.com/anchore/grype/internal/schemaver"
+	db "github.com/mairaayub1/grype/grype/db/v6"
+	"github.com/mairaayub1/grype/grype/db/v6/distribution"
+	"github.com/mairaayub1/grype/grype/db/v6/internal"
+	"github.com/mairaayub1/grype/internal/schemaver"
 )
 
 type mockClient struct {

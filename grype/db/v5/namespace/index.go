@@ -7,13 +7,13 @@ import (
 	"strings"
 
 	hashiVer "github.com/anchore/go-version"
-	"github.com/anchore/grype/grype/db/v5/namespace/cpe"
-	"github.com/anchore/grype/grype/db/v5/namespace/distro"
-	"github.com/anchore/grype/grype/db/v5/namespace/language"
-	grypeDistro "github.com/anchore/grype/grype/distro"
-	"github.com/anchore/grype/internal"
-	"github.com/anchore/grype/internal/log"
 	syftPkg "github.com/anchore/syft/syft/pkg"
+	"github.com/mairaayub1/grype/grype/db/v5/namespace/cpe"
+	"github.com/mairaayub1/grype/grype/db/v5/namespace/distro"
+	"github.com/mairaayub1/grype/grype/db/v5/namespace/language"
+	grypeDistro "github.com/mairaayub1/grype/grype/distro"
+	"github.com/mairaayub1/grype/internal"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 var simpleSemVer = regexp.MustCompile(`^(?P<major>\d+)(\.(?P<minor>\d+)(\.(?P<patch>\d+(?P<remaining>[^-_]+)*))?)?$`)

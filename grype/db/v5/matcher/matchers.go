@@ -1,19 +1,19 @@
 package matcher
 
 import (
-	"github.com/anchore/grype/grype/db/v5/matcher/apk"
-	"github.com/anchore/grype/grype/db/v5/matcher/dotnet"
-	"github.com/anchore/grype/grype/db/v5/matcher/dpkg"
-	"github.com/anchore/grype/grype/db/v5/matcher/golang"
-	"github.com/anchore/grype/grype/db/v5/matcher/java"
-	"github.com/anchore/grype/grype/db/v5/matcher/javascript"
-	"github.com/anchore/grype/grype/db/v5/matcher/msrc"
-	"github.com/anchore/grype/grype/db/v5/matcher/portage"
-	"github.com/anchore/grype/grype/db/v5/matcher/python"
-	"github.com/anchore/grype/grype/db/v5/matcher/rpm"
-	"github.com/anchore/grype/grype/db/v5/matcher/ruby"
-	"github.com/anchore/grype/grype/db/v5/matcher/rust"
-	"github.com/anchore/grype/grype/db/v5/matcher/stock"
+	"github.com/mairaayub1/grype/grype/db/v5/matcher/apk"
+	"github.com/mairaayub1/grype/grype/db/v5/matcher/dotnet"
+	"github.com/mairaayub1/grype/grype/db/v5/matcher/dpkg"
+	"github.com/mairaayub1/grype/grype/db/v5/matcher/golang"
+	"github.com/mairaayub1/grype/grype/db/v5/matcher/java"
+	"github.com/mairaayub1/grype/grype/db/v5/matcher/javascript"
+	"github.com/mairaayub1/grype/grype/db/v5/matcher/msrc"
+	"github.com/mairaayub1/grype/grype/db/v5/matcher/portage"
+	"github.com/mairaayub1/grype/grype/db/v5/matcher/python"
+	"github.com/mairaayub1/grype/grype/db/v5/matcher/rpm"
+	"github.com/mairaayub1/grype/grype/db/v5/matcher/ruby"
+	"github.com/mairaayub1/grype/grype/db/v5/matcher/rust"
+	"github.com/mairaayub1/grype/grype/db/v5/matcher/stock"
 )
 
 // Config contains values used by individual matcher structs for advanced configuration

@@ -9,8 +9,8 @@ import (
 
 	"github.com/anchore/clio"
 	"github.com/anchore/go-testutils"
-	"github.com/anchore/grype/grype/presenter/internal"
-	"github.com/anchore/grype/grype/presenter/models"
+	"github.com/mairaayub1/grype/grype/presenter/internal"
+	"github.com/mairaayub1/grype/grype/presenter/models"
 )
 
 var update = flag.Bool("update", false, "update the *.golden files for cyclonedx presenters")

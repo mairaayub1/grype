@@ -1,8 +1,8 @@
 package qualifier
 
 import (
-	"github.com/anchore/grype/grype/distro"
-	"github.com/anchore/grype/grype/pkg"
+	"github.com/mairaayub1/grype/grype/distro"
+	"github.com/mairaayub1/grype/grype/pkg"
 )
 
 type Qualifier interface {

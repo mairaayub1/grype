@@ -4,10 +4,10 @@ import (
 	"fmt"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/vulnerability"
-	"github.com/anchore/grype/internal/format"
 	"github.com/anchore/syft/syft/source"
+	"github.com/mairaayub1/grype/grype/match"
+	"github.com/mairaayub1/grype/grype/vulnerability"
+	"github.com/mairaayub1/grype/internal/format"
 )
 
 type Grype struct {

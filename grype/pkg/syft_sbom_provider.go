@@ -11,10 +11,10 @@ import (
 	"github.com/gabriel-vasile/mimetype"
 	"github.com/mitchellh/go-homedir"
 
-	"github.com/anchore/grype/internal"
-	"github.com/anchore/grype/internal/log"
 	"github.com/anchore/syft/syft/format"
 	"github.com/anchore/syft/syft/sbom"
+	"github.com/mairaayub1/grype/internal"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 func syftSBOMProvider(userInput string, config ProviderConfig) ([]Package, Context, *sbom.SBOM, error) {

@@ -7,12 +7,12 @@ import (
 	"github.com/scylladb/go-set/strset"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/grype/grype/distro"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/version"
-	"github.com/anchore/grype/grype/vulnerability"
 	"github.com/anchore/syft/syft/cpe"
 	syftPkg "github.com/anchore/syft/syft/pkg"
+	"github.com/mairaayub1/grype/grype/distro"
+	"github.com/mairaayub1/grype/grype/pkg"
+	"github.com/mairaayub1/grype/grype/version"
+	"github.com/mairaayub1/grype/grype/vulnerability"
 )
 
 func TestMatcher_DropMainPackageGivenVersionInfo(t *testing.T) {

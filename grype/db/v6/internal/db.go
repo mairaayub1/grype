@@ -5,7 +5,7 @@ import (
 
 	"gorm.io/gorm"
 
-	"github.com/anchore/grype/grype/db/internal/gormadapter"
+	"github.com/mairaayub1/grype/grype/db/internal/gormadapter"
 )
 
 // NewDB creates a new empty DB for writing or opens an existing one for reading from the given path.

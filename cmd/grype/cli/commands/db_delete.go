@@ -6,10 +6,10 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/cmd/grype/cli/options"
-	legacyDistribution "github.com/anchore/grype/grype/db/legacy/distribution"
-	"github.com/anchore/grype/grype/db/v6/distribution"
-	"github.com/anchore/grype/grype/db/v6/installation"
+	"github.com/mairaayub1/grype/cmd/grype/cli/options"
+	legacyDistribution "github.com/mairaayub1/grype/grype/db/legacy/distribution"
+	"github.com/mairaayub1/grype/grype/db/v6/distribution"
+	"github.com/mairaayub1/grype/grype/db/v6/installation"
 )
 
 func DBDelete(app clio.Application) *cobra.Command {

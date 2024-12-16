@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	v6 "github.com/anchore/grype/grype/db/v6"
+	v6 "github.com/mairaayub1/grype/grype/db/v6"
 )
 
 func TestPresentDBStatus(t *testing.T) {

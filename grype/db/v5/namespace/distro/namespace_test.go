@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	grypeDistro "github.com/anchore/grype/grype/distro"
+	grypeDistro "github.com/mairaayub1/grype/grype/distro"
 )
 
 func TestFromString(t *testing.T) {

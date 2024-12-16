@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/anchore/grype/grype/vulnerability"
+	"github.com/mairaayub1/grype/grype/vulnerability"
 )
 
 var _ vulnerability.MetadataProvider = (*MetadataMock)(nil)

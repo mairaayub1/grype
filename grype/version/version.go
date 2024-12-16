@@ -3,8 +3,8 @@ package version
 import (
 	"fmt"
 
-	"github.com/anchore/grype/grype/pkg"
 	"github.com/anchore/syft/syft/cpe"
+	"github.com/mairaayub1/grype/grype/pkg"
 )
 
 // ErrUnsupportedVersion is returned when a version string cannot be parsed into a rich version object

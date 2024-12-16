@@ -3,7 +3,7 @@ package monitor
 import (
 	"github.com/wagoodman/go-progress"
 
-	"github.com/anchore/grype/grype/vulnerability"
+	"github.com/mairaayub1/grype/grype/vulnerability"
 )
 
 type Matching struct {

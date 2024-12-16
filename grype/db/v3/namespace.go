@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/anchore/grype/grype/distro"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/internal/log"
-	"github.com/anchore/grype/internal/stringutil"
 	packageurl "github.com/anchore/packageurl-go"
 	syftPkg "github.com/anchore/syft/syft/pkg"
+	"github.com/mairaayub1/grype/grype/distro"
+	"github.com/mairaayub1/grype/grype/pkg"
+	"github.com/mairaayub1/grype/internal/log"
+	"github.com/mairaayub1/grype/internal/stringutil"
 )
 
 const (

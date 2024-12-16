@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	hashiVer "github.com/anchore/go-version"
-	"github.com/anchore/grype/internal"
-	"github.com/anchore/grype/internal/log"
+	"github.com/mairaayub1/grype/internal"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 var _ Comparator = (*jvmVersion)(nil)

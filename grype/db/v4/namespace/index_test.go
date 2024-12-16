@@ -5,11 +5,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/grype/grype/db/v4/namespace/cpe"
-	"github.com/anchore/grype/grype/db/v4/namespace/distro"
-	"github.com/anchore/grype/grype/db/v4/namespace/language"
-	osDistro "github.com/anchore/grype/grype/distro"
 	syftPkg "github.com/anchore/syft/syft/pkg"
+	"github.com/mairaayub1/grype/grype/db/v4/namespace/cpe"
+	"github.com/mairaayub1/grype/grype/db/v4/namespace/distro"
+	"github.com/mairaayub1/grype/grype/db/v4/namespace/language"
+	osDistro "github.com/mairaayub1/grype/grype/distro"
 )
 
 func TestFromStringSlice(t *testing.T) {

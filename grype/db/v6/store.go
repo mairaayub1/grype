@@ -5,8 +5,8 @@ import (
 
 	"gorm.io/gorm"
 
-	"github.com/anchore/grype/grype/db/v6/internal"
-	"github.com/anchore/grype/internal/log"
+	"github.com/mairaayub1/grype/grype/db/v6/internal"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 type store struct {

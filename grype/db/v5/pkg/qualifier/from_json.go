@@ -5,9 +5,9 @@ import (
 
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/anchore/grype/grype/db/v5/pkg/qualifier/platformcpe"
-	"github.com/anchore/grype/grype/db/v5/pkg/qualifier/rpmmodularity"
-	"github.com/anchore/grype/internal/log"
+	"github.com/mairaayub1/grype/grype/db/v5/pkg/qualifier/platformcpe"
+	"github.com/mairaayub1/grype/grype/db/v5/pkg/qualifier/rpmmodularity"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 func FromJSON(data []byte) ([]Qualifier, error) {

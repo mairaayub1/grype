@@ -9,8 +9,8 @@ import (
 
 	"github.com/spf13/afero"
 
-	"github.com/anchore/grype/internal/file"
-	"github.com/anchore/grype/internal/log"
+	"github.com/mairaayub1/grype/internal/file"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 const MetadataFileName = "metadata.json"

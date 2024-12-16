@@ -4,7 +4,7 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/cmd/grype/cli/options"
+	"github.com/mairaayub1/grype/cmd/grype/cli/options"
 )
 
 const (

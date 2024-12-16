@@ -9,13 +9,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	v5 "github.com/anchore/grype/grype/db/v5"
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/version"
-	"github.com/anchore/grype/grype/vulnerability"
 	"github.com/anchore/syft/syft/cpe"
 	syftPkg "github.com/anchore/syft/syft/pkg"
+	v5 "github.com/mairaayub1/grype/grype/db/v5"
+	"github.com/mairaayub1/grype/grype/match"
+	"github.com/mairaayub1/grype/grype/pkg"
+	"github.com/mairaayub1/grype/grype/version"
+	"github.com/mairaayub1/grype/grype/vulnerability"
 )
 
 var _ v5.VulnerabilityStoreReader = (*mockVulnStore)(nil)

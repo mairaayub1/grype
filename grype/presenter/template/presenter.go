@@ -12,10 +12,10 @@ import (
 	"github.com/mitchellh/go-homedir"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/presenter/models"
-	"github.com/anchore/grype/grype/vulnerability"
+	"github.com/mairaayub1/grype/grype/match"
+	"github.com/mairaayub1/grype/grype/pkg"
+	"github.com/mairaayub1/grype/grype/presenter/models"
+	"github.com/mairaayub1/grype/grype/vulnerability"
 )
 
 // Presenter is an implementation of presenter.Presenter that formats output according to a user-provided Go text template.

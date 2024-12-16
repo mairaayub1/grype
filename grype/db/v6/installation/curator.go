@@ -15,12 +15,12 @@ import (
 	"github.com/wagoodman/go-progress"
 
 	"github.com/anchore/archiver/v3"
-	db "github.com/anchore/grype/grype/db/v6"
-	"github.com/anchore/grype/grype/db/v6/distribution"
-	"github.com/anchore/grype/grype/event"
-	"github.com/anchore/grype/internal/bus"
-	"github.com/anchore/grype/internal/file"
-	"github.com/anchore/grype/internal/log"
+	db "github.com/mairaayub1/grype/grype/db/v6"
+	"github.com/mairaayub1/grype/grype/db/v6/distribution"
+	"github.com/mairaayub1/grype/grype/event"
+	"github.com/mairaayub1/grype/internal/bus"
+	"github.com/mairaayub1/grype/internal/file"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 const lastUpdateCheckFileName = "last_update_check"

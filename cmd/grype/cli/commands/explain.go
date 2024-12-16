@@ -8,10 +8,10 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/grype/presenter/explain"
-	"github.com/anchore/grype/grype/presenter/models"
-	"github.com/anchore/grype/internal"
-	"github.com/anchore/grype/internal/log"
+	"github.com/mairaayub1/grype/grype/presenter/explain"
+	"github.com/mairaayub1/grype/grype/presenter/models"
+	"github.com/mairaayub1/grype/internal"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 type explainOptions struct {

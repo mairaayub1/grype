@@ -11,9 +11,9 @@ import (
 	"github.com/hashicorp/go-multierror"
 	"github.com/mitchellh/go-homedir"
 
-	"github.com/anchore/grype/grype/presenter/models"
-	"github.com/anchore/grype/internal/bus"
-	"github.com/anchore/grype/internal/log"
+	"github.com/mairaayub1/grype/grype/presenter/models"
+	"github.com/mairaayub1/grype/internal/bus"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 type ScanResultWriter interface {

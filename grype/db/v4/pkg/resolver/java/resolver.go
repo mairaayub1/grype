@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
-	grypePkg "github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/internal/log"
-	"github.com/anchore/grype/internal/stringutil"
 	"github.com/anchore/packageurl-go"
+	grypePkg "github.com/mairaayub1/grype/grype/pkg"
+	"github.com/mairaayub1/grype/internal/log"
+	"github.com/mairaayub1/grype/internal/stringutil"
 )
 
 type Resolver struct {

@@ -12,13 +12,13 @@ import (
 
 	"github.com/anchore/clio"
 	"github.com/anchore/go-testutils"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/presenter/internal"
-	"github.com/anchore/grype/grype/presenter/models"
-	"github.com/anchore/grype/grype/vulnerability"
 	"github.com/anchore/syft/syft/file"
 	"github.com/anchore/syft/syft/source"
 	"github.com/anchore/syft/syft/source/directorysource"
+	"github.com/mairaayub1/grype/grype/pkg"
+	"github.com/mairaayub1/grype/grype/presenter/internal"
+	"github.com/mairaayub1/grype/grype/presenter/models"
+	"github.com/mairaayub1/grype/grype/vulnerability"
 )
 
 var updateSnapshot = flag.Bool("update-sarif", false, "update .golden files for sarif presenters")

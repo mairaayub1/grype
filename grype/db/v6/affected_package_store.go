@@ -8,8 +8,8 @@ import (
 
 	"gorm.io/gorm"
 
-	"github.com/anchore/grype/internal/log"
 	"github.com/anchore/syft/syft/cpe"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 var NoDistroSpecified = &DistroSpecifier{}

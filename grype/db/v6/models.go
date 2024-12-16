@@ -8,7 +8,7 @@ import (
 	"github.com/OneOfOne/xxhash"
 	"gorm.io/gorm"
 
-	"github.com/anchore/grype/internal/log"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 func Models() []any {

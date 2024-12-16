@@ -11,7 +11,7 @@ import (
 	"golang.org/x/exp/maps"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/cmd/grype/internal/ui"
+	"github.com/mairaayub1/grype/cmd/grype/internal/ui"
 )
 
 func disableUI(app clio.Application) func(*cobra.Command, []string) error {

@@ -1,7 +1,7 @@
 package v5
 
 import (
-	"github.com/anchore/grype/grype/vulnerability"
+	"github.com/mairaayub1/grype/grype/vulnerability"
 )
 
 func NewCvss(m []Cvss) []vulnerability.Cvss {

@@ -5,9 +5,9 @@ import (
 
 	gopenvex "github.com/openvex/go-vex/pkg/vex"
 
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/vex/openvex"
+	"github.com/mairaayub1/grype/grype/match"
+	"github.com/mairaayub1/grype/grype/pkg"
+	"github.com/mairaayub1/grype/grype/vex/openvex"
 )
 
 type Status string

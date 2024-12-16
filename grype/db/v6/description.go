@@ -14,8 +14,8 @@ import (
 	"github.com/OneOfOne/xxhash"
 	"github.com/spf13/afero"
 
-	"github.com/anchore/grype/internal/file"
-	"github.com/anchore/grype/internal/schemaver"
+	"github.com/mairaayub1/grype/internal/file"
+	"github.com/mairaayub1/grype/internal/schemaver"
 )
 
 const ChecksumFileName = VulnerabilityDBFileName + ".checksum"

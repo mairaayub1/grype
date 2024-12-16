@@ -19,12 +19,12 @@ import (
 
 	"github.com/anchore/archiver/v3"
 	"github.com/anchore/clio"
-	v5 "github.com/anchore/grype/grype/db/v5"
-	"github.com/anchore/grype/grype/db/v5/store"
-	"github.com/anchore/grype/grype/event"
-	"github.com/anchore/grype/internal/bus"
-	"github.com/anchore/grype/internal/file"
-	"github.com/anchore/grype/internal/log"
+	v5 "github.com/mairaayub1/grype/grype/db/v5"
+	"github.com/mairaayub1/grype/grype/db/v5/store"
+	"github.com/mairaayub1/grype/grype/event"
+	"github.com/mairaayub1/grype/internal/bus"
+	"github.com/mairaayub1/grype/internal/file"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 const (

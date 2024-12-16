@@ -3,7 +3,7 @@ package v5
 import (
 	"io"
 
-	"github.com/anchore/grype/grype/match"
+	"github.com/mairaayub1/grype/grype/match"
 )
 
 type ProviderStore struct {

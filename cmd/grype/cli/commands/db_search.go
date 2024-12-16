@@ -10,13 +10,13 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/grype"
-	v6 "github.com/anchore/grype/grype/db/v6"
-	"github.com/anchore/grype/grype/db/v6/distribution"
-	"github.com/anchore/grype/grype/db/v6/installation"
-	"github.com/anchore/grype/grype/vulnerability"
-	"github.com/anchore/grype/internal/bus"
-	"github.com/anchore/grype/internal/log"
+	"github.com/mairaayub1/grype/grype"
+	v6 "github.com/mairaayub1/grype/grype/db/v6"
+	"github.com/mairaayub1/grype/grype/db/v6/distribution"
+	"github.com/mairaayub1/grype/grype/db/v6/installation"
+	"github.com/mairaayub1/grype/grype/vulnerability"
+	"github.com/mairaayub1/grype/internal/bus"
+	"github.com/mairaayub1/grype/internal/log"
 )
 
 type dbQueryOptions struct {

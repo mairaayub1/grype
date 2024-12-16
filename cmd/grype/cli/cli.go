@@ -7,16 +7,16 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/cmd/grype/cli/commands"
-	grypeHandler "github.com/anchore/grype/cmd/grype/cli/ui"
-	"github.com/anchore/grype/cmd/grype/internal/ui"
-	"github.com/anchore/grype/grype/db"
-	"github.com/anchore/grype/internal/bus"
-	"github.com/anchore/grype/internal/log"
-	"github.com/anchore/grype/internal/redact"
 	"github.com/anchore/stereoscope"
 	syftHandler "github.com/anchore/syft/cmd/syft/cli/ui"
 	"github.com/anchore/syft/syft"
+	"github.com/mairaayub1/grype/cmd/grype/cli/commands"
+	grypeHandler "github.com/mairaayub1/grype/cmd/grype/cli/ui"
+	"github.com/mairaayub1/grype/cmd/grype/internal/ui"
+	"github.com/mairaayub1/grype/grype/db"
+	"github.com/mairaayub1/grype/internal/bus"
+	"github.com/mairaayub1/grype/internal/log"
+	"github.com/mairaayub1/grype/internal/redact"
 )
 
 func Application(id clio.Identification) clio.Application {

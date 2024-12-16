@@ -4,10 +4,10 @@ import (
 	"github.com/wagoodman/go-partybus"
 	"github.com/wagoodman/go-progress"
 
-	v5 "github.com/anchore/grype/grype/db/v5"
-	"github.com/anchore/grype/grype/event"
-	"github.com/anchore/grype/grype/event/monitor"
-	"github.com/anchore/grype/internal/bus"
+	v5 "github.com/mairaayub1/grype/grype/db/v5"
+	"github.com/mairaayub1/grype/grype/event"
+	"github.com/mairaayub1/grype/grype/event/monitor"
+	"github.com/mairaayub1/grype/internal/bus"
 )
 
 type storeKey struct {

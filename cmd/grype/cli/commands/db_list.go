@@ -11,8 +11,8 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/anchore/clio"
-	legacyDistribution "github.com/anchore/grype/grype/db/legacy/distribution"
-	"github.com/anchore/grype/grype/db/v6/distribution"
+	legacyDistribution "github.com/mairaayub1/grype/grype/db/legacy/distribution"
+	"github.com/mairaayub1/grype/grype/db/v6/distribution"
 )
 
 type dbListOptions struct {
