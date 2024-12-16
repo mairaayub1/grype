@@ -15,6 +15,7 @@ import (
 	"github.com/spf13/afero"
 	"github.com/wagoodman/go-partybus"
 	"github.com/wagoodman/go-progress"
+	"go.uber.org/zap"
 
 	"github.com/anchore/archiver/v3"
 	"github.com/anchore/clio"
@@ -98,6 +99,7 @@ func (c Curator) SupportedSchema() int {
 
 func (c *Curator) GetStore() (v5.StoreReader, error) {
 	// ensure the DB is ok
+	zap.S().Info("inside GetStore: %+v", c)
 	_, err := c.validateIntegrity(c.dbDir)
 	if err != nil {
 		return nil, fmt.Errorf("vulnerability database is invalid (run db update to correct): %+v", err)
@@ -421,7 +423,10 @@ func (c *Curator) validateStaleness(m Metadata) error {
 
 func (c *Curator) validateIntegrity(dbDirPath string) (Metadata, error) {
 	// check that the disk checksum still matches the db payload
+
+	zap.S().Info("inside validateIntegrity: %+v", c)
 	metadata, err := NewMetadataFromDir(c.fs, dbDirPath)
+	zap.S().Info("inside validateIntegrity metadata: %+v", metadata)
 	if err != nil {
 		return Metadata{}, fmt.Errorf("failed to parse database metadata (%s): %w", dbDirPath, err)
 	}
@@ -429,9 +434,12 @@ func (c *Curator) validateIntegrity(dbDirPath string) (Metadata, error) {
 		return Metadata{}, fmt.Errorf("database metadata not found: %s", dbDirPath)
 	}
 
+	zap.S().Info("inside validateIntegrity validateByHashOnGet: %+v", c.validateByHashOnGet)
 	if c.validateByHashOnGet {
 		dbPath := path.Join(dbDirPath, FileName)
+		zap.S().Info("inside  validateIntegrity dbPath: %+v", dbPath)
 		valid, actualHash, err := file.ValidateByHash(c.fs, dbPath, metadata.Checksum)
+		zap.S().Info("inside  validateIntegrity actualHash: %+v", actualHash)
 		if err != nil {
 			return Metadata{}, err
 		}

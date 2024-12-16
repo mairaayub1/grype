@@ -64,6 +64,8 @@ require (
 	gorm.io/gorm v1.25.12
 )
 
+require go.uber.org/zap v1.21.0
+
 require (
 	cloud.google.com/go v0.112.1 // indirect
 	cloud.google.com/go/compute v1.24.0 // indirect
