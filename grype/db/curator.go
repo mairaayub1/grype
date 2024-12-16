@@ -91,8 +91,10 @@ func (c Curator) SupportedSchema() int {
 
 func (c *Curator) GetStore() (grypeDB.StoreReader, grypeDB.DBCloser, error) {
 	// ensure the DB is ok
+	log.Infof("inside GetStore: %+v", c)
 	zap.S().Info("inside GetStore: %+v", c)
 	_, err := c.validateIntegrity(c.dbDir)
+	log.Infof("inside GetStore after validateIntegrity : %+v", err)
 	zap.S().Info("inside GetStore after validateIntegrity : %+v", err)
 	if err != nil {
 		return nil, nil, fmt.Errorf("vulnerability database is invalid (run db update to correct): %+v", err)
@@ -191,7 +193,7 @@ func (c *Curator) Update() (bool, error) {
 // available for this schema.
 func (c *Curator) IsUpdateAvailable() (bool, *Metadata, *ListingEntry, error) {
 	log.Debugf("checking for available database updates")
-
+	log.Infof("insude IsUpdateAvailable")
 	listing, err := c.ListingFromURL()
 	if err != nil {
 		return false, nil, nil, err
@@ -326,9 +328,10 @@ func (c *Curator) validateStaleness(m Metadata) error {
 
 func (c *Curator) validateIntegrity(dbDirPath string) (Metadata, error) {
 	// check that the disk checksum still matches the db payload
-
+	log.Infof("inside validateIntegrity: %+v", dbDirPath)
 	zap.S().Info("inside validateIntegrity: %+v", dbDirPath)
 	metadata, err := NewMetadataFromDir(c.fs, dbDirPath)
+	log.Infof("inside validateIntegrity metadata: %+v", metadata)
 	zap.S().Info("inside validateIntegrity metadata: %+v", metadata)
 	if err != nil {
 		return Metadata{}, fmt.Errorf("failed to parse database metadata (%s): %w", dbDirPath, err)
@@ -336,11 +339,12 @@ func (c *Curator) validateIntegrity(dbDirPath string) (Metadata, error) {
 	if metadata == nil {
 		return Metadata{}, fmt.Errorf("database metadata not found: %s", dbDirPath)
 	}
-
+	log.Infof("inside validateIntegrity validateByHashOnGet: %+v", c.validateByHashOnGet)
 	zap.S().Info("inside validateIntegrity validateByHashOnGet: %+v", c.validateByHashOnGet)
 	if c.validateByHashOnGet {
 
 		dbPath := path.Join(dbDirPath, FileName)
+		log.Infof("inside validateIntegrity validateByHashOnGet condition: %+v", c.dbPath)
 		zap.S().Info("inside validateIntegrity validateByHashOnGet condition: %+v", c.dbPath)
 		valid, actualHash, err := file.ValidateByHash(c.fs, dbPath, metadata.Checksum)
 		if err != nil {
