@@ -24,6 +24,7 @@ import (
 	"github.com/anchore/grype/internal/bus"
 	"github.com/anchore/grype/internal/file"
 	"github.com/anchore/grype/internal/log"
+	"go.uber.org/zap"
 )
 
 const (
@@ -90,7 +91,9 @@ func (c Curator) SupportedSchema() int {
 
 func (c *Curator) GetStore() (grypeDB.StoreReader, grypeDB.DBCloser, error) {
 	// ensure the DB is ok
+	zap.S().Info("inside GetStore: %+v", c)
 	_, err := c.validateIntegrity(c.dbDir)
+	zap.S().Info("inside GetStore after validateIntegrity : %+v", err)
 	if err != nil {
 		return nil, nil, fmt.Errorf("vulnerability database is invalid (run db update to correct): %+v", err)
 	}
@@ -323,7 +326,10 @@ func (c *Curator) validateStaleness(m Metadata) error {
 
 func (c *Curator) validateIntegrity(dbDirPath string) (Metadata, error) {
 	// check that the disk checksum still matches the db payload
+
+	zap.S().Info("inside validateIntegrity: %+v", dbDirPath)
 	metadata, err := NewMetadataFromDir(c.fs, dbDirPath)
+	zap.S().Info("inside validateIntegrity metadata: %+v", metadata)
 	if err != nil {
 		return Metadata{}, fmt.Errorf("failed to parse database metadata (%s): %w", dbDirPath, err)
 	}
@@ -331,8 +337,11 @@ func (c *Curator) validateIntegrity(dbDirPath string) (Metadata, error) {
 		return Metadata{}, fmt.Errorf("database metadata not found: %s", dbDirPath)
 	}
 
+	zap.S().Info("inside validateIntegrity validateByHashOnGet: %+v", c.validateByHashOnGet)
 	if c.validateByHashOnGet {
+
 		dbPath := path.Join(dbDirPath, FileName)
+		zap.S().Info("inside validateIntegrity validateByHashOnGet condition: %+v", c.dbPath)
 		valid, actualHash, err := file.ValidateByHash(c.fs, dbPath, metadata.Checksum)
 		if err != nil {
 			return Metadata{}, err

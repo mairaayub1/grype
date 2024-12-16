@@ -60,7 +60,10 @@ require (
 	gorm.io/gorm v1.25.11
 )
 
-require github.com/anchore/go-collections v0.0.0-20240216171411-9321230ce537
+require (
+	github.com/anchore/go-collections v0.0.0-20240216171411-9321230ce537
+	go.uber.org/zap v1.21.0
+)
 
 require (
 	cloud.google.com/go v0.110.10 // indirect
