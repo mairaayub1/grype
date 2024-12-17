@@ -97,7 +97,7 @@ func (c *Curator) GetStore() (grypeDB.StoreReader, grypeDB.DBCloser, error) {
 	log.Infof("inside GetStore after validateIntegrity : %+v", err)
 	zap.S().Info("inside GetStore after validateIntegrity : %+v", err)
 	if err != nil {
-		return nil, nil, fmt.Errorf("vulnerability database is invalid (run db update to correct): %+v", err)
+		return nil, nil, fmt.Errorf("vulnerability database is invalid (run db update to correct) c.dbDir %+v: %+v", c.dbDir, err)
 	}
 
 	s, err := store.New(c.dbPath, false)
@@ -334,7 +334,7 @@ func (c *Curator) validateIntegrity(dbDirPath string) (Metadata, error) {
 	log.Infof("inside validateIntegrity metadata: %+v", metadata)
 	zap.S().Info("inside validateIntegrity metadata: %+v", metadata)
 	if err != nil {
-		return Metadata{}, fmt.Errorf("failed to parse database metadata (%s): %w", dbDirPath, err)
+		return Metadata{}, fmt.Errorf("failed to parse database metadata (%s) for metadata %+v: %w", dbDirPath, metadata, err)
 	}
 	if metadata == nil {
 		return Metadata{}, fmt.Errorf("database metadata not found: %s", dbDirPath)
